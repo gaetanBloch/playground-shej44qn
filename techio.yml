@@ -1,0 +1,19 @@
+title : Java Maven Project
+
+# Table of content
+plan:
+  - title: Welcome # Set the page title (only displayed if your contribution has several pages)
+    statement: markdowns/welcome.md # Set the file path to the page content
+#  - title: Another Page
+#    statement: markdowns/another-page.md
+
+
+# Settings for your programming projects and the associated Docker images
+projects:
+  java:
+    root: /java-project # Set the root path to your Java project
+
+    # Set the docker image. This image runs JUnit tests using this syntax:
+    # @[Code Editor Title]({"stubs": ["EditorFile1.java", "EditorFile2.java", ...], "command": "MyJUnitClass#myMethod"})
+    # More details here: https://github.com/TechDotIO/java-maven3-junit4-runner
+    runner: techio/java-maven3-junit4-runner:1.1.3-java-8
